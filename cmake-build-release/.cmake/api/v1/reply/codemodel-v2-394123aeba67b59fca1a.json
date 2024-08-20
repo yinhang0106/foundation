@@ -1,0 +1,112 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "cpp/pmr",
+					"jsonFile" : "directory-cpp.pmr-Release-1c7fb1901af52e05a46d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "cpp/pmr",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "foundation",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "pmr_01::@686074ba77f174aa0d84",
+					"jsonFile" : "target-pmr_01-Release-bb65721785c72c9644d5.json",
+					"name" : "pmr_01",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pmr_02::@686074ba77f174aa0d84",
+					"jsonFile" : "target-pmr_02-Release-323afad17acd52a96a77.json",
+					"name" : "pmr_02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pmr_03::@686074ba77f174aa0d84",
+					"jsonFile" : "target-pmr_03-Release-80c2794bf785fc2e60a6.json",
+					"name" : "pmr_03",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pmr_04::@686074ba77f174aa0d84",
+					"jsonFile" : "target-pmr_04-Release-4ed07f88e1ca023674c3.json",
+					"name" : "pmr_04",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "pmr_05::@686074ba77f174aa0d84",
+					"jsonFile" : "target-pmr_05-Release-143a6de9bdef66538a26.json",
+					"name" : "pmr_05",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/d/Dev/foundation/cmake-build-release",
+		"source" : "/mnt/d/Dev/foundation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

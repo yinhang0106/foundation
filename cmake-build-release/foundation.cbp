@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="foundation"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cpp\;CMake Files\cpp\pmr\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/d/Dev/foundation/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/d/Dev/foundation/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/d/Dev/foundation/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pmr_01">
+				<Option output="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/pmr_01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 pmr_01"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pmr_01/fast">
+				<Option output="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/pmr_01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 pmr_01/fast"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pmr_02">
+				<Option output="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/pmr_02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 pmr_02"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pmr_02/fast">
+				<Option output="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/pmr_02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 pmr_02/fast"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pmr_03">
+				<Option output="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/pmr_03" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 pmr_03"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pmr_03/fast">
+				<Option output="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/pmr_03" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 pmr_03/fast"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pmr_04">
+				<Option output="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/pmr_04" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 pmr_04"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pmr_04/fast">
+				<Option output="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/pmr_04" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 pmr_04/fast"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pmr_05">
+				<Option output="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/pmr_05" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 pmr_05"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pmr_05/fast">
+				<Option output="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/pmr_05" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/13"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/13"/>
+					<Add directory="/usr/include/c++/13/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/13/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 pmr_05/fast"/>
+					<CompileFile command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j24 -f &quot;/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/d/Dev/foundation/cpp/pmr/pmr_01.cpp">
+			<Option target="pmr_01"/>
+		</Unit>
+		<Unit filename="/mnt/d/Dev/foundation/cpp/pmr/pmr_02.cpp">
+			<Option target="pmr_02"/>
+		</Unit>
+		<Unit filename="/mnt/d/Dev/foundation/cpp/pmr/pmr_03.cpp">
+			<Option target="pmr_03"/>
+		</Unit>
+		<Unit filename="/mnt/d/Dev/foundation/cpp/pmr/pmr_04.cpp">
+			<Option target="pmr_04"/>
+		</Unit>
+		<Unit filename="/mnt/d/Dev/foundation/cpp/pmr/pmr_05.cpp">
+			<Option target="pmr_05"/>
+		</Unit>
+		<Unit filename="/mnt/d/Dev/foundation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Dev/foundation/cpp/pmr/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cpp\pmr\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

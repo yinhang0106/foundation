@@ -1,0 +1,9 @@
+/mnt/d/Dev/foundation/cmake-build-release/CMakeFiles/edit_cache.dir
+/mnt/d/Dev/foundation/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/CMakeFiles/pmr_01.dir
+/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/CMakeFiles/pmr_02.dir
+/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/CMakeFiles/pmr_03.dir
+/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/CMakeFiles/pmr_04.dir
+/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/CMakeFiles/pmr_05.dir
+/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/CMakeFiles/edit_cache.dir
+/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/CMakeFiles/rebuild_cache.dir
