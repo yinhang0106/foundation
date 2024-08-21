@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/d/Dev/foundation/cpp/pmr
+# Install script for directory: /home/ubuntu/dev/foundation/cpp/pmr
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

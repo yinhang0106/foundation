@@ -3,6 +3,7 @@
 #include <memory_resource>
 #include <list>
 
+// for type erasure
 struct memory_resource {
     size_t m_watermark = 0;
     virtual char *data() = 0;
@@ -10,7 +11,7 @@ struct memory_resource {
 };
 
 struct memory_resource_stack : memory_resource {
-    char m_buf[65536 * 30];    // must be large enough
+    char m_buf[65536 * 30]{};    // must be large enough
     char* data() override {
         return m_buf;
     }

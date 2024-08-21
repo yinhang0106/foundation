@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/Dev/foundation
+CMAKE_SOURCE_DIR = /home/ubuntu/dev/foundation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/Dev/foundation/cmake-build-release
+CMAKE_BINARY_DIR = /home/ubuntu/dev/foundation/cmake-build-release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Dev/foundation/cmake-build-release/CMakeFiles /mnt/d/Dev/foundation/cmake-build-release//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/dev/foundation/cmake-build-release/CMakeFiles /home/ubuntu/dev/foundation/cmake-build-release//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Dev/foundation/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/dev/foundation/cmake-build-release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -113,9 +113,22 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /mnt/d/Dev/foundation/cmake-build-release/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/ubuntu/dev/foundation/cmake-build-release/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named fliter
+
+# Build rule for target.
+fliter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fliter
+.PHONY : fliter
+
+# fast build rule for target.
+fliter/fast:
+	$(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/fliter.dir/build.make cpp/pmr/CMakeFiles/fliter.dir/build
+.PHONY : fliter/fast
 
 #=============================================================================
 # Target rules for targets named pmr_01
@@ -182,6 +195,32 @@ pmr_05/fast:
 	$(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_05.dir/build.make cpp/pmr/CMakeFiles/pmr_05.dir/build
 .PHONY : pmr_05/fast
 
+#=============================================================================
+# Target rules for targets named pmr_06
+
+# Build rule for target.
+pmr_06: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pmr_06
+.PHONY : pmr_06
+
+# fast build rule for target.
+pmr_06/fast:
+	$(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_06.dir/build.make cpp/pmr/CMakeFiles/pmr_06.dir/build
+.PHONY : pmr_06/fast
+
+#=============================================================================
+# Target rules for targets named trace_new_delete
+
+# Build rule for target.
+trace_new_delete: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trace_new_delete
+.PHONY : trace_new_delete
+
+# fast build rule for target.
+trace_new_delete/fast:
+	$(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/trace_new_delete.dir/build.make cpp/pmr/CMakeFiles/trace_new_delete.dir/build
+.PHONY : trace_new_delete/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -190,11 +229,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... fliter"
 	@echo "... pmr_01"
 	@echo "... pmr_02"
 	@echo "... pmr_03"
 	@echo "... pmr_04"
 	@echo "... pmr_05"
+	@echo "... pmr_06"
+	@echo "... trace_new_delete"
 .PHONY : help
 
 
@@ -206,7 +248,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /mnt/d/Dev/foundation/cmake-build-release/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/ubuntu/dev/foundation/cmake-build-release/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

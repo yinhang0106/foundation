@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/d/Dev/foundation
+# Install script for directory: /home/ubuntu/dev/foundation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/mnt/d/Dev/foundation/cmake-build-release/cpp/pmr/cmake_install.cmake")
+  include("/home/ubuntu/dev/foundation/cmake-build-release/cpp/pmr/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/d/Dev/foundation/cmake-build-release/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ubuntu/dev/foundation/cmake-build-release/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

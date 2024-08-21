@@ -12,17 +12,25 @@ int main() {
     std::pmr::unsynchronized_pool_resource mem{};
     {
         std::vector<char> a;
-        TICK(vector);
         for (int i = 0; i < 65536; i++) {
             a.push_back(42);
+        }
+        TICK(vector);
+        for (int i = 0; i < 65536; i++) {
+            if (i % 100 == 0)
+                a.erase(a.begin());
         }
         TOCK(vector);
     }
     {
         std::pmr::vector<char> a{&mem};
-        TICK(pmr_unsync_vector);
         for (int i = 0; i < 65536; i++) {
             a.push_back(42);
+        }
+        TICK(pmr_unsync_vector);
+        for (int i = 0; i < 65536; i++) {
+            if (i % 100 == 0)
+                a.erase(a.begin());
         }
         TOCK(pmr_unsync_vector);
     }
@@ -30,27 +38,37 @@ int main() {
         std::pmr::monotonic_buffer_resource lmem{&mem};
         std::pmr::vector<char> a{&lmem};
         // prev8 next8 char1 padding7 = node24
-        TICK(pmr_monotonic_vector);
         for (int i = 0; i < 65536; i++) {
             a.push_back(42);
+        }
+        TICK(pmr_monotonic_vector);
+        for (int i = 0; i < 65536; i++) {
+            if (i % 100 == 0)
+                a.erase(a.begin());
         }
         TOCK(pmr_monotonic_vector);
     }
     {
         std::list<char> a;
         // prev8 next8 char1 padding7 = node24
-        TICK(list);
         for (int i = 0; i < 65536; i++) {
             a.push_back(42);
+        }
+        TICK(list);
+        for (int i = 0; i < 65536; i++) {
+            a.erase(a.begin());
         }
         TOCK(list);
     }
     {
         std::pmr::list<char> a{&mem};
         // prev8 next8 char1 padding7 = node24
-        TICK(pmr_unsync_list);
         for (int i = 0; i < 65536; i++) {
             a.push_back(42);
+        }
+        TICK(pmr_unsync_list);
+        for (int i = 0; i < 65536; i++) {
+            a.erase(a.begin());
         }
         TOCK(pmr_unsync_list);
     }
@@ -60,9 +78,12 @@ int main() {
         // std::list<char, std::pmr::polymorphic_allocator<char>> a{&lmem};
         std::pmr::list<char> a{&lmem};
         // prev8 next8 char1 padding7 = node24
-        TICK(pmr_monotonic_list);
         for (int i = 0; i < 65536; i++) {
             a.push_back(42);
+        }
+        TICK(pmr_monotonic_list);
+        for (int i = 0; i < 65536; i++) {
+            a.erase(a.begin());
         }
         TOCK(pmr_monotonic_list);
     }

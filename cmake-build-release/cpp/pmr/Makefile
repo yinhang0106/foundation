@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/Dev/foundation
+CMAKE_SOURCE_DIR = /home/ubuntu/dev/foundation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/Dev/foundation/cmake-build-release
+CMAKE_BINARY_DIR = /home/ubuntu/dev/foundation/cmake-build-release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Dev/foundation/cmake-build-release/CMakeFiles /mnt/d/Dev/foundation/cmake-build-release/cpp/pmr//CMakeFiles/progress.marks
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Dev/foundation/cmake-build-release/CMakeFiles 0
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/dev/foundation/cmake-build-release/CMakeFiles /home/ubuntu/dev/foundation/cmake-build-release/cpp/pmr//CMakeFiles/progress.marks
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/dev/foundation/cmake-build-release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/clean
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +103,37 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/preinstall
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/preinstall
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(CMAKE_COMMAND) -P /mnt/d/Dev/foundation/cmake-build-release/CMakeFiles/VerifyGlobs.cmake
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(CMAKE_COMMAND) -P /home/ubuntu/dev/foundation/cmake-build-release/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
+cpp/pmr/CMakeFiles/fliter.dir/rule:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/CMakeFiles/fliter.dir/rule
+.PHONY : cpp/pmr/CMakeFiles/fliter.dir/rule
+
+# Convenience name for target.
+fliter: cpp/pmr/CMakeFiles/fliter.dir/rule
+.PHONY : fliter
+
+# fast build rule for target.
+fliter/fast:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/fliter.dir/build.make cpp/pmr/CMakeFiles/fliter.dir/build
+.PHONY : fliter/fast
+
+# Convenience name for target.
 cpp/pmr/CMakeFiles/pmr_01.dir/rule:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/CMakeFiles/pmr_01.dir/rule
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/CMakeFiles/pmr_01.dir/rule
 .PHONY : cpp/pmr/CMakeFiles/pmr_01.dir/rule
 
 # Convenience name for target.
@@ -128,12 +142,12 @@ pmr_01: cpp/pmr/CMakeFiles/pmr_01.dir/rule
 
 # fast build rule for target.
 pmr_01/fast:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_01.dir/build.make cpp/pmr/CMakeFiles/pmr_01.dir/build
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_01.dir/build.make cpp/pmr/CMakeFiles/pmr_01.dir/build
 .PHONY : pmr_01/fast
 
 # Convenience name for target.
 cpp/pmr/CMakeFiles/pmr_02.dir/rule:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/CMakeFiles/pmr_02.dir/rule
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/CMakeFiles/pmr_02.dir/rule
 .PHONY : cpp/pmr/CMakeFiles/pmr_02.dir/rule
 
 # Convenience name for target.
@@ -142,12 +156,12 @@ pmr_02: cpp/pmr/CMakeFiles/pmr_02.dir/rule
 
 # fast build rule for target.
 pmr_02/fast:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_02.dir/build.make cpp/pmr/CMakeFiles/pmr_02.dir/build
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_02.dir/build.make cpp/pmr/CMakeFiles/pmr_02.dir/build
 .PHONY : pmr_02/fast
 
 # Convenience name for target.
 cpp/pmr/CMakeFiles/pmr_03.dir/rule:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/CMakeFiles/pmr_03.dir/rule
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/CMakeFiles/pmr_03.dir/rule
 .PHONY : cpp/pmr/CMakeFiles/pmr_03.dir/rule
 
 # Convenience name for target.
@@ -156,12 +170,12 @@ pmr_03: cpp/pmr/CMakeFiles/pmr_03.dir/rule
 
 # fast build rule for target.
 pmr_03/fast:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_03.dir/build.make cpp/pmr/CMakeFiles/pmr_03.dir/build
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_03.dir/build.make cpp/pmr/CMakeFiles/pmr_03.dir/build
 .PHONY : pmr_03/fast
 
 # Convenience name for target.
 cpp/pmr/CMakeFiles/pmr_04.dir/rule:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/CMakeFiles/pmr_04.dir/rule
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/CMakeFiles/pmr_04.dir/rule
 .PHONY : cpp/pmr/CMakeFiles/pmr_04.dir/rule
 
 # Convenience name for target.
@@ -170,12 +184,12 @@ pmr_04: cpp/pmr/CMakeFiles/pmr_04.dir/rule
 
 # fast build rule for target.
 pmr_04/fast:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_04.dir/build.make cpp/pmr/CMakeFiles/pmr_04.dir/build
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_04.dir/build.make cpp/pmr/CMakeFiles/pmr_04.dir/build
 .PHONY : pmr_04/fast
 
 # Convenience name for target.
 cpp/pmr/CMakeFiles/pmr_05.dir/rule:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/CMakeFiles/pmr_05.dir/rule
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/CMakeFiles/pmr_05.dir/rule
 .PHONY : cpp/pmr/CMakeFiles/pmr_05.dir/rule
 
 # Convenience name for target.
@@ -184,15 +198,67 @@ pmr_05: cpp/pmr/CMakeFiles/pmr_05.dir/rule
 
 # fast build rule for target.
 pmr_05/fast:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_05.dir/build.make cpp/pmr/CMakeFiles/pmr_05.dir/build
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_05.dir/build.make cpp/pmr/CMakeFiles/pmr_05.dir/build
 .PHONY : pmr_05/fast
+
+# Convenience name for target.
+cpp/pmr/CMakeFiles/pmr_06.dir/rule:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/CMakeFiles/pmr_06.dir/rule
+.PHONY : cpp/pmr/CMakeFiles/pmr_06.dir/rule
+
+# Convenience name for target.
+pmr_06: cpp/pmr/CMakeFiles/pmr_06.dir/rule
+.PHONY : pmr_06
+
+# fast build rule for target.
+pmr_06/fast:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_06.dir/build.make cpp/pmr/CMakeFiles/pmr_06.dir/build
+.PHONY : pmr_06/fast
+
+# Convenience name for target.
+cpp/pmr/CMakeFiles/trace_new_delete.dir/rule:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/pmr/CMakeFiles/trace_new_delete.dir/rule
+.PHONY : cpp/pmr/CMakeFiles/trace_new_delete.dir/rule
+
+# Convenience name for target.
+trace_new_delete: cpp/pmr/CMakeFiles/trace_new_delete.dir/rule
+.PHONY : trace_new_delete
+
+# fast build rule for target.
+trace_new_delete/fast:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/trace_new_delete.dir/build.make cpp/pmr/CMakeFiles/trace_new_delete.dir/build
+.PHONY : trace_new_delete/fast
+
+fliter.o: fliter.cpp.o
+.PHONY : fliter.o
+
+# target to build an object file
+fliter.cpp.o:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/fliter.dir/build.make cpp/pmr/CMakeFiles/fliter.dir/fliter.cpp.o
+.PHONY : fliter.cpp.o
+
+fliter.i: fliter.cpp.i
+.PHONY : fliter.i
+
+# target to preprocess a source file
+fliter.cpp.i:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/fliter.dir/build.make cpp/pmr/CMakeFiles/fliter.dir/fliter.cpp.i
+.PHONY : fliter.cpp.i
+
+fliter.s: fliter.cpp.s
+.PHONY : fliter.s
+
+# target to generate assembly for a file
+fliter.cpp.s:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/fliter.dir/build.make cpp/pmr/CMakeFiles/fliter.dir/fliter.cpp.s
+.PHONY : fliter.cpp.s
 
 pmr_01.o: pmr_01.cpp.o
 .PHONY : pmr_01.o
 
 # target to build an object file
 pmr_01.cpp.o:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_01.dir/build.make cpp/pmr/CMakeFiles/pmr_01.dir/pmr_01.cpp.o
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_01.dir/build.make cpp/pmr/CMakeFiles/pmr_01.dir/pmr_01.cpp.o
 .PHONY : pmr_01.cpp.o
 
 pmr_01.i: pmr_01.cpp.i
@@ -200,7 +266,7 @@ pmr_01.i: pmr_01.cpp.i
 
 # target to preprocess a source file
 pmr_01.cpp.i:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_01.dir/build.make cpp/pmr/CMakeFiles/pmr_01.dir/pmr_01.cpp.i
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_01.dir/build.make cpp/pmr/CMakeFiles/pmr_01.dir/pmr_01.cpp.i
 .PHONY : pmr_01.cpp.i
 
 pmr_01.s: pmr_01.cpp.s
@@ -208,7 +274,7 @@ pmr_01.s: pmr_01.cpp.s
 
 # target to generate assembly for a file
 pmr_01.cpp.s:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_01.dir/build.make cpp/pmr/CMakeFiles/pmr_01.dir/pmr_01.cpp.s
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_01.dir/build.make cpp/pmr/CMakeFiles/pmr_01.dir/pmr_01.cpp.s
 .PHONY : pmr_01.cpp.s
 
 pmr_02.o: pmr_02.cpp.o
@@ -216,7 +282,7 @@ pmr_02.o: pmr_02.cpp.o
 
 # target to build an object file
 pmr_02.cpp.o:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_02.dir/build.make cpp/pmr/CMakeFiles/pmr_02.dir/pmr_02.cpp.o
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_02.dir/build.make cpp/pmr/CMakeFiles/pmr_02.dir/pmr_02.cpp.o
 .PHONY : pmr_02.cpp.o
 
 pmr_02.i: pmr_02.cpp.i
@@ -224,7 +290,7 @@ pmr_02.i: pmr_02.cpp.i
 
 # target to preprocess a source file
 pmr_02.cpp.i:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_02.dir/build.make cpp/pmr/CMakeFiles/pmr_02.dir/pmr_02.cpp.i
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_02.dir/build.make cpp/pmr/CMakeFiles/pmr_02.dir/pmr_02.cpp.i
 .PHONY : pmr_02.cpp.i
 
 pmr_02.s: pmr_02.cpp.s
@@ -232,7 +298,7 @@ pmr_02.s: pmr_02.cpp.s
 
 # target to generate assembly for a file
 pmr_02.cpp.s:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_02.dir/build.make cpp/pmr/CMakeFiles/pmr_02.dir/pmr_02.cpp.s
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_02.dir/build.make cpp/pmr/CMakeFiles/pmr_02.dir/pmr_02.cpp.s
 .PHONY : pmr_02.cpp.s
 
 pmr_03.o: pmr_03.cpp.o
@@ -240,7 +306,7 @@ pmr_03.o: pmr_03.cpp.o
 
 # target to build an object file
 pmr_03.cpp.o:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_03.dir/build.make cpp/pmr/CMakeFiles/pmr_03.dir/pmr_03.cpp.o
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_03.dir/build.make cpp/pmr/CMakeFiles/pmr_03.dir/pmr_03.cpp.o
 .PHONY : pmr_03.cpp.o
 
 pmr_03.i: pmr_03.cpp.i
@@ -248,7 +314,7 @@ pmr_03.i: pmr_03.cpp.i
 
 # target to preprocess a source file
 pmr_03.cpp.i:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_03.dir/build.make cpp/pmr/CMakeFiles/pmr_03.dir/pmr_03.cpp.i
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_03.dir/build.make cpp/pmr/CMakeFiles/pmr_03.dir/pmr_03.cpp.i
 .PHONY : pmr_03.cpp.i
 
 pmr_03.s: pmr_03.cpp.s
@@ -256,7 +322,7 @@ pmr_03.s: pmr_03.cpp.s
 
 # target to generate assembly for a file
 pmr_03.cpp.s:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_03.dir/build.make cpp/pmr/CMakeFiles/pmr_03.dir/pmr_03.cpp.s
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_03.dir/build.make cpp/pmr/CMakeFiles/pmr_03.dir/pmr_03.cpp.s
 .PHONY : pmr_03.cpp.s
 
 pmr_04.o: pmr_04.cpp.o
@@ -264,7 +330,7 @@ pmr_04.o: pmr_04.cpp.o
 
 # target to build an object file
 pmr_04.cpp.o:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_04.dir/build.make cpp/pmr/CMakeFiles/pmr_04.dir/pmr_04.cpp.o
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_04.dir/build.make cpp/pmr/CMakeFiles/pmr_04.dir/pmr_04.cpp.o
 .PHONY : pmr_04.cpp.o
 
 pmr_04.i: pmr_04.cpp.i
@@ -272,7 +338,7 @@ pmr_04.i: pmr_04.cpp.i
 
 # target to preprocess a source file
 pmr_04.cpp.i:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_04.dir/build.make cpp/pmr/CMakeFiles/pmr_04.dir/pmr_04.cpp.i
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_04.dir/build.make cpp/pmr/CMakeFiles/pmr_04.dir/pmr_04.cpp.i
 .PHONY : pmr_04.cpp.i
 
 pmr_04.s: pmr_04.cpp.s
@@ -280,7 +346,7 @@ pmr_04.s: pmr_04.cpp.s
 
 # target to generate assembly for a file
 pmr_04.cpp.s:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_04.dir/build.make cpp/pmr/CMakeFiles/pmr_04.dir/pmr_04.cpp.s
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_04.dir/build.make cpp/pmr/CMakeFiles/pmr_04.dir/pmr_04.cpp.s
 .PHONY : pmr_04.cpp.s
 
 pmr_05.o: pmr_05.cpp.o
@@ -288,7 +354,7 @@ pmr_05.o: pmr_05.cpp.o
 
 # target to build an object file
 pmr_05.cpp.o:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_05.dir/build.make cpp/pmr/CMakeFiles/pmr_05.dir/pmr_05.cpp.o
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_05.dir/build.make cpp/pmr/CMakeFiles/pmr_05.dir/pmr_05.cpp.o
 .PHONY : pmr_05.cpp.o
 
 pmr_05.i: pmr_05.cpp.i
@@ -296,7 +362,7 @@ pmr_05.i: pmr_05.cpp.i
 
 # target to preprocess a source file
 pmr_05.cpp.i:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_05.dir/build.make cpp/pmr/CMakeFiles/pmr_05.dir/pmr_05.cpp.i
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_05.dir/build.make cpp/pmr/CMakeFiles/pmr_05.dir/pmr_05.cpp.i
 .PHONY : pmr_05.cpp.i
 
 pmr_05.s: pmr_05.cpp.s
@@ -304,8 +370,56 @@ pmr_05.s: pmr_05.cpp.s
 
 # target to generate assembly for a file
 pmr_05.cpp.s:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_05.dir/build.make cpp/pmr/CMakeFiles/pmr_05.dir/pmr_05.cpp.s
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_05.dir/build.make cpp/pmr/CMakeFiles/pmr_05.dir/pmr_05.cpp.s
 .PHONY : pmr_05.cpp.s
+
+pmr_06.o: pmr_06.cpp.o
+.PHONY : pmr_06.o
+
+# target to build an object file
+pmr_06.cpp.o:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_06.dir/build.make cpp/pmr/CMakeFiles/pmr_06.dir/pmr_06.cpp.o
+.PHONY : pmr_06.cpp.o
+
+pmr_06.i: pmr_06.cpp.i
+.PHONY : pmr_06.i
+
+# target to preprocess a source file
+pmr_06.cpp.i:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_06.dir/build.make cpp/pmr/CMakeFiles/pmr_06.dir/pmr_06.cpp.i
+.PHONY : pmr_06.cpp.i
+
+pmr_06.s: pmr_06.cpp.s
+.PHONY : pmr_06.s
+
+# target to generate assembly for a file
+pmr_06.cpp.s:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/pmr_06.dir/build.make cpp/pmr/CMakeFiles/pmr_06.dir/pmr_06.cpp.s
+.PHONY : pmr_06.cpp.s
+
+trace_new_delete.o: trace_new_delete.cpp.o
+.PHONY : trace_new_delete.o
+
+# target to build an object file
+trace_new_delete.cpp.o:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/trace_new_delete.dir/build.make cpp/pmr/CMakeFiles/trace_new_delete.dir/trace_new_delete.cpp.o
+.PHONY : trace_new_delete.cpp.o
+
+trace_new_delete.i: trace_new_delete.cpp.i
+.PHONY : trace_new_delete.i
+
+# target to preprocess a source file
+trace_new_delete.cpp.i:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/trace_new_delete.dir/build.make cpp/pmr/CMakeFiles/trace_new_delete.dir/trace_new_delete.cpp.i
+.PHONY : trace_new_delete.cpp.i
+
+trace_new_delete.s: trace_new_delete.cpp.s
+.PHONY : trace_new_delete.s
+
+# target to generate assembly for a file
+trace_new_delete.cpp.s:
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(MAKE) $(MAKESILENT) -f cpp/pmr/CMakeFiles/trace_new_delete.dir/build.make cpp/pmr/CMakeFiles/trace_new_delete.dir/trace_new_delete.cpp.s
+.PHONY : trace_new_delete.cpp.s
 
 # Help Target
 help:
@@ -315,11 +429,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... fliter"
 	@echo "... pmr_01"
 	@echo "... pmr_02"
 	@echo "... pmr_03"
 	@echo "... pmr_04"
 	@echo "... pmr_05"
+	@echo "... pmr_06"
+	@echo "... trace_new_delete"
+	@echo "... fliter.o"
+	@echo "... fliter.i"
+	@echo "... fliter.s"
 	@echo "... pmr_01.o"
 	@echo "... pmr_01.i"
 	@echo "... pmr_01.s"
@@ -335,6 +455,12 @@ help:
 	@echo "... pmr_05.o"
 	@echo "... pmr_05.i"
 	@echo "... pmr_05.s"
+	@echo "... pmr_06.o"
+	@echo "... pmr_06.i"
+	@echo "... pmr_06.s"
+	@echo "... trace_new_delete.o"
+	@echo "... trace_new_delete.i"
+	@echo "... trace_new_delete.s"
 .PHONY : help
 
 
@@ -346,7 +472,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(CMAKE_COMMAND) -P /mnt/d/Dev/foundation/cmake-build-release/CMakeFiles/VerifyGlobs.cmake
-	cd /mnt/d/Dev/foundation/cmake-build-release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(CMAKE_COMMAND) -P /home/ubuntu/dev/foundation/cmake-build-release/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ubuntu/dev/foundation/cmake-build-release && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
