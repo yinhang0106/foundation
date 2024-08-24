@@ -12,4 +12,5 @@ else ()
     message(FATAL_ERROR "TBB not found")
 endif ()
 
-add_subdirectory(cpp/pmr)
+#add_subdirectory(cpp/pmr)
+add_subdirectory(cpp/error_code)
