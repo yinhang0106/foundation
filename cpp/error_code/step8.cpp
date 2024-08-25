@@ -8,34 +8,34 @@
 // int : [INT_MIN, INT_MAX]
 // optional<int> : [INT_MIN, INT_MAX] | {nullopt}
 
-//// std::error_category
-//struct ErrorCategory {
-//	virtual const char *message(int val) const = 0;
-//
-//};
-//
-//// std::error_code
-//struct ErrorCode {
-//	int value;
-//	ErrorCategory *category;
-//};
-//
-//// std::generic_category()
-//auto *std_error_category() {
-//	struct StdErrorCategory : ErrorCategory {
-//		virtual const char *message(int val) const override {
-//			return strerror(val);
-//		}
-//	};
-//	static StdErrorCategory instance;
-//	return &instance;
-//};
-//
-//// std::make_error_code
-//ErrorCode makeErrorCode(std::errc ec) {
-//	return {(int)ec, std_error_category()};
-//}
-//
+// std::error_category
+struct ErrorCategory {
+	virtual const char *message(int val) const = 0;
+
+};
+
+// std::error_code
+struct ErrorCode {
+	int value;
+	ErrorCategory *category;
+};
+
+// std::generic_category()
+auto *std_error_category() {
+	struct StdErrorCategory : ErrorCategory {
+		virtual const char *message(int val) const override {
+			return strerror(val);
+		}
+	};
+	static StdErrorCategory instance;
+	return &instance;
+};
+
+// std::make_error_code
+ErrorCode makeErrorCode(std::errc ec) {
+	return {(int)ec, std_error_category()};
+}
+
 
 enum class LoginErrc {
 	success = 0,

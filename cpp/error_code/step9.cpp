@@ -29,7 +29,7 @@ std::error_code make_error_code(login_errc ec) {
 			return "login";
 		}
 	} instance;
-	return {(int)ec, instance};
+	return {static_cast<int>(ec), instance};
 }
 
 int sqrt(int x, std::error_code &ec) {

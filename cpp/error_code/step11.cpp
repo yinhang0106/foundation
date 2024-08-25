@@ -56,16 +56,8 @@ tl::expected<int, std::error_code> sqrt(int x) {
 }
 
 int main() {
-
-//	{	// expected version
-//		auto ret = sqrt(4);
-//		std::cout << std::format("结果: {}\n", ret.value());
-//	}
-////	terminate called after throwing an instance of 'tl::bad_expected_access<std::error_code>'
-////		what():  Bad expected access
-
 	// 将error_code转换为异常
-	throw std::system_error(make_error_code(login_errc::not_login), __FILE__ ":" + std::to_string(__LINE__) + " " + __func__ + " ");
-	throw std::runtime_error("error");
-	return 0;
+    std::error_code ec = make_error_code(login_errc::not_login);
+    std::string what_str = std::format("\n{} : {}", __FILE__, __func__);
+    throw std::system_error(ec, what_str + ": " + std::to_string(__LINE__));
 }

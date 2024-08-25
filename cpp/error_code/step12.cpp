@@ -3,6 +3,7 @@
 #include <variant>
 #include <fcntl.h>
 #include <unistd.h>
+#include <span>
 
 #include "tl-expected.hpp"
 
@@ -54,7 +55,6 @@ struct tl::bad_expected_access<std::error_code> : std::system_error {
 	explicit bad_expected_access(std::error_code ec) : std::system_error(ec, "expected") {}
 };
 
-
 template <class T>
 using expected = tl::expected<T, std::error_code>;
 
@@ -73,24 +73,30 @@ using expected = tl::expected<T, std::error_code>;
 //}
 
 template <class T>
-requires std::is_same_v<T, int> || std::is_same_v<T, ssize_t>
+struct PolicyNegative {
+    bool operator()(T ret) const {
+        return ret < 0;
+    }
+};
+
+template <class T, class _policy = PolicyNegative<T>>
+requires std::is_same_v<T, int>
+    || std::is_same_v<T, ssize_t>
+    && std::is_invocable_v<_policy, T>
+    && std::is_same_v<std::invoke_result_t<_policy, T>, bool>
 expected<T> check_error(T ret) {
-	if (ret < 0) {
-		return tl::unexpected{std::error_code(errno, std::generic_category())};
+	if (_policy()(ret)) {
+		return tl::unexpected{make_error_code(std::errc(errno))};
 	}
 	return ret;
 }
 
-struct raii_file {
-	int fd;
-	[[nodiscard]] expected<ssize_t> write(std::span<char const> buf) const {
-		return check_error(::write(fd, buf.data(), buf.size()));
-	}
-};
 
 int main() {
-	auto fd = check_error(open("not_exist", O_RDONLY)).value();
-	char buf[1024];
-	check_error(read(fd, buf, sizeof(buf))).value();
+    if (auto fd = check_error(open("not_exist", O_RDONLY))) {
+        std::cout << "open success\n";
+    } else {
+        std::cout << "open failed: " << fd.error().message() << '\n';
+    }
 	return 0;
 }
