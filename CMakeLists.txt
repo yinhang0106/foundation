@@ -14,3 +14,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 #add_subdirectory(cpp/pmr)
 add_subdirectory(cpp/error_code)
+add_subdirectory(cpp/warnings)
+add_subdirectory(cpp/macro)
