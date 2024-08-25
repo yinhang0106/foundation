@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cerrno>
 #include <cstring>
+//#include <string>
 
 
 // 如果x可以是任意整数，我们需要传入错误类型指针
@@ -30,10 +31,10 @@ int sqrt(int x) {
 int main() {
 	auto ret = sqrt(4);
 	if (ret == -1) {
-//		std::cerr << "sqrt: " << strerror(errno) << '\n';
-		perror("sqrt");
+		std::cerr << "sqrt: " << strerror(errno) << '\n';
+//		perror("sqrt");
 	} else {
-		perror("sqrt");
+//		perror("sqrt");
 		std::cout << std::format("结果: {}\n", ret);
 	}
 	return 0;

@@ -30,6 +30,7 @@ int sqrt(int x) {
 
 
 int main() {
+
 	auto ret = sqrt(2);
 	if (ret == -1) {
 		std::cerr << "x < 0\n";

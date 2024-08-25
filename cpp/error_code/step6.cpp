@@ -28,26 +28,33 @@ const char *login_strerror(LoginErrc &ec) {
 }
 
 struct ErrorCategory {
-	virtual const char *message(int val) const = 0;
-
-};
-
-struct StdErrorCategory : ErrorCategory {
-	virtual const char *message(int val) const override {
-		return strerror(val);
-	}
-};
-
-struct LoginErrorCategory : ErrorCategory {
-	virtual const char *message(int val) const override {
-		return login_strerror((LoginErrc &)val);
-	}
+	virtual std::string message(int val) const = 0;
+	virtual const char * name() const noexcept = 0;
 };
 
 struct ErrorCode {
 	int value;
 	ErrorCategory *category;
 };
+
+struct StdErrorCategory : ErrorCategory {
+	virtual std::string message(int val) const override {
+		return strerror(val);
+	}
+	virtual const char *name() const noexcept override {
+		return "std";
+	}
+};
+
+struct LoginErrorCategory : ErrorCategory {
+	virtual std::string message(int val) const override {
+		return login_strerror((LoginErrc &)val);
+	}
+	virtual const char *name() const noexcept override {
+		return "login";
+	}
+};
+
 
 StdErrorCategory *std_error_category() {
 	static StdErrorCategory instance;

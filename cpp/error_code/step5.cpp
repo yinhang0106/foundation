@@ -14,7 +14,7 @@ enum class LoginErrc {
 	not_login,
 };
 
-std::string login_strerror(LoginErrc &ec) {
+std::string login_strerror(LoginErrc ec) {
 	switch (ec) {
 		case LoginErrc::success:
 			return "登录成功！";
@@ -49,7 +49,7 @@ int sqrt(int x, LoginErrc &ec) {
 int main() {
 	auto ec = LoginErrc::success;
 	auto ret = sqrt(4, ec);
-	if (ret == -1) {
+	if (ec != LoginErrc::success) {
 		std::cerr << "sqrt: " << login_strerror(ec) << '\n';
 //		perror("sqrt");
 	} else {
